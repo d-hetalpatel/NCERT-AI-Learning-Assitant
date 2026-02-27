@@ -25,13 +25,16 @@ st.write("Select topics to get chapter, book, and research paper recommendations
 # ─────────────────────────────────────────────
 # MOUNT GOOGLE DRIVE
 # ─────────────────────────────────────────────
-try:
-    from google.colab import drive
-    if not os.path.exists("/content/drive/MyDrive"):
-        drive.mount("/content/drive")
-except ImportError:
-    DB_PATH = "ncert.db"  # fallback for local runs
-
+#try:
+ #   from google.colab import drive
+  #  if not os.path.exists("/content/drive/MyDrive"):
+   #     drive.mount("/content/drive")
+#except ImportError:
+ #   DB_PATH = "ncert.db"  # fallback for local runs
+st.write("Current working directory:", os.getcwd())
+st.write("Files in directory:", os.listdir())
+st.write("DB exists?", os.path.exists("ncert.db"))
+#DB_PATH = "ncert.db"  # fallback for local runs
 # ─────────────────────────────────────────────
 # DATABASE
 # ─────────────────────────────────────────────
