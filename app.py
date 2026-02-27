@@ -31,10 +31,13 @@ st.write("Select topics to get chapter, book, and research paper recommendations
    #     drive.mount("/content/drive")
 #except ImportError:
  #   DB_PATH = "ncert.db"  # fallback for local runs
-st.write("Current working directory:", os.getcwd())
-st.write("Files in directory:", os.listdir())
-st.write("DB exists?", os.path.exists("ncert.db"))
-#DB_PATH = "ncert.db"  # fallback for local runs
+# Absolute path to the folder where app.py lives
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "ncert.db")
+# Debug (remove later)
+st.write("Running from:", BASE_DIR)
+st.write("DB path:", DB_PATH)
+st.write("DB exists:", os.path.exists(DB_PATH))
 # ─────────────────────────────────────────────
 # DATABASE
 # ─────────────────────────────────────────────
