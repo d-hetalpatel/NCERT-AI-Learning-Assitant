@@ -34,7 +34,7 @@ st.write("Select topics to get chapter, book, and research paper recommendations
 st.write("Current working directory:", os.getcwd())
 st.write("Files in directory:", os.listdir())
 st.write("DB exists?", os.path.exists("ncert.db"))
-DB_PATH = "ncert.db"  # fallback for local runs
+#DB_PATH = "ncert.db"  # fallback for local runs
 # ─────────────────────────────────────────────
 # DATABASE
 # ─────────────────────────────────────────────
