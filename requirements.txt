@@ -1,7 +1,6 @@
 streamlit
-numpy
+numpy<2.0
 pandas
 scikit-learn
 sentence-transformers
 torch
-sqlite3
