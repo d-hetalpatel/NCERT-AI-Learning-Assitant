@@ -13,7 +13,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # ─────────────────────────────────────────────
 # CONFIG
 # ─────────────────────────────────────────────
-DB_PATH = "/content/drive/MyDrive/ZenithIndia/NCERT Learning Assistant/ncert.db"
+DB_PATH = "ncert.db"
 
 # ─────────────────────────────────────────────
 # PAGE CONFIG
